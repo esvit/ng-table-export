@@ -1,0 +1,13 @@
+{
+  "name": "ng-table-export",
+  "version": "0.1.0",
+  "main": [
+    "ng-table-export.js"
+  ],
+  "ignore": [
+    "src"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0-rc.2"
+  }
+}

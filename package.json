@@ -1,0 +1,18 @@
+{
+  "name": "ng-table-export",
+  "version": "0.1.0",
+  "author": "Vitalii Savchuk <esvit666@gmail.com>",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/esvit/ng-table-export.git"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt": "~0.4.1"
+  }
+}
