@@ -1,5 +1,9 @@
 angular.module('ngTableExport', [])
-.directive('exportCsv', function ($parse) {
+.config(['$compileProvider', function($compileProvider) {
+    // allow data links
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|data):/);
+}])
+.directive('exportCsv', ['$parse', function ($parse) {
     return {
         restrict: 'A',
         scope: false,
@@ -41,4 +45,4 @@ angular.module('ngTableExport', [])
             $parse(attrs.exportCsv).assign(scope.$parent, csv);
         }
     };
-});
+}]);
