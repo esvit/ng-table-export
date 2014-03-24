@@ -17,7 +17,7 @@ angular.module('ngTableExport', ['ngTable'])
 						'"';
 				},
 				generate: function() {
-					//this array hold true or false for each header based on
+					//this array holds true or false for each header based on
 					//whether they have the 'no-export' class or not
 					var exports = [];
 					data = '';
@@ -43,7 +43,7 @@ angular.module('ngTableExport', ['ngTable'])
 						if (i != 1) {
 							angular.forEach(tds, function(td, i) {
 								//if the corresponding index in exports[] is false, this
-								//header does not have the 'no-export' class and is not exported
+								//header does not have the 'no-export' class and is therefore exported
 								if(exports[i] == false) {
 									rowData += csv.stringify(angular.element(td).text()) + ';';
 								}
