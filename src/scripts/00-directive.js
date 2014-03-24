@@ -23,7 +23,6 @@ angular.module('ngTableExport', ['ngTable'])
 					data = '';
 					var rows = element.find('tr');
 					angular.forEach(rows, function(row, i) {
-						console.log(i);
 						var tr = angular.element(row),
 							tds = tr.find('th'),
 							rowData = '';
