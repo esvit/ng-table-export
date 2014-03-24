@@ -17,6 +17,9 @@ angular.module('ngTableExport', [])
                         '"';
                 },
                 generate: function() {
+                    //this array holds true or false for each header based on
+                    //whether they have the 'no-export' class or not
+                    var exports = [];
                     data = '';
                     var rows = element.find('tr');
                     angular.forEach(rows, function(row, i) {
@@ -29,13 +32,25 @@ angular.module('ngTableExport', [])
                         if (tds.length == 0) {
                             tds = tr.find('td');
                         }
+                        else {
+                            //go through the headers and check if they have the
+                            //'no-export' class
+                            for(var i = 0; i < tds.length; i++) {
+                                exports[i] = angular.element(tds[i]).hasClass('no-export');
+                            }
+                        }
                         if (i != 1) {
                             angular.forEach(tds, function(td, i) {
-                                rowData += csv.stringify(angular.element(td).text()) + ';';
+                                //if the corresponding index in exports[] is false, this
+                                //header does not have the 'no-export' class and is therefore exported
+                                if(exports[i] == false) {
+                                    rowData += csv.stringify(angular.element(td).text()) + ';';
+                                }
                             });
                             rowData = rowData.slice(0, rowData.length - 1); //remove last semicolon
                         }
                         data += rowData + "\n";
+                        
                     });
                 },
                 link: function() {
