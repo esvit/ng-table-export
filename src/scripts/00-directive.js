@@ -37,6 +37,7 @@ angular.module('ngTableExport', [])
                         }
                         data += rowData + "\n";
                     });
+                    data = '\ufeff' + data;
                 },
                 link: function() {
                     return 'data:text/csv;charset=UTF-8,' + encodeURIComponent(data);
