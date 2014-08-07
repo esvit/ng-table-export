@@ -4,6 +4,8 @@ angular.module('ngTableExport', [])
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|data):/);
 }])
 .directive('exportCsv', ['$parse', function ($parse) {
+    var delimiter = ';';
+
     return {
         restrict: 'A',
         scope: false,
@@ -31,7 +33,7 @@ angular.module('ngTableExport', [])
                         }
                         if (i != 1) {
                             angular.forEach(tds, function(td, i) {
-                                rowData += csv.stringify(angular.element(td).text()) + ';';
+                                rowData += csv.stringify(angular.element(td).text()) + Array.apply(null, Array(td.colSpan)).map(function () { return delimiter; }).join('');
                             });
                             rowData = rowData.slice(0, rowData.length - 1); //remove last semicolon
                         }
