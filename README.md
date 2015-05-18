@@ -1,6 +1,10 @@
 ng-table-to-csv
 ===============
 
+[![Build Status](http://img.shields.io/travis/kollavarsham/ng-table-to-csv.svg)](https://travis-ci.org/kollavarsham/ng-table-to-csv)
+[![Code Climate](http://img.shields.io/codeclimate/github/kollavarsham/ng-table-to-csv.svg)](https://codeclimate.com/github/kollavarsham/ng-table-to-csv)
+![Bower](https://img.shields.io/bower/v/ng-table-to-csv.svg)
+
 ## Angular.js Module for exporting Tables to CSV
 
 As opposed to [the forked library](https://github.com/esvit/ng-table-export), this version does not have a dependency on `ng-table` and can export any HTML table.
@@ -29,6 +33,8 @@ See below:
         <!-- table contents -->
       </table>
 ```
+
+Check out [this plunker](http://plnkr.co/Y0r33F) to see the plugin in action.
 
 #### License
 
