@@ -1,7 +1,7 @@
 {
   "name"           : "ng-table-to-csv",
   "description"    : "Export data from ngTable to CSV (Forked from ng-table-export)",
-  "version"        : "0.2.0",
+  "version"        : "0.2.1",
   "authors"        : [
     {
       "name" : "Vitalii Savchuk",
@@ -18,7 +18,8 @@
   "ignore"         : [
     "src",
     "test",
-    "Gruntfile.js",
+    "gulpfile.js",
+    "karma*.js",
     "**/.*"
   ],
   "dependencies"   : {},
