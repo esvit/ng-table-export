@@ -9,18 +9,32 @@ ng-table-to-csv
 
 As opposed to [the forked library](https://github.com/esvit/ng-table-export), this version does not have a dependency on `ng-table` and can export any HTML table.
 
-## Installation
 
-With Bower:
+## Demo
+
+[Live Demo on Plunker](http://plnkr.co/Y0r33F)
+
+## Getting Started / Usage
+
+Install module via bower (or download the files from the `dist` folder in the repo):
 
 ```shell
 bower install ng-table-to-csv --save
 ```
 
-## Usage
+Add a reference to `dist/ng-table-to-csv.js` into your HTML pages.
 
-Add `export-csv` attribute directive on the table to define a new `csv` object on the scope with `generate()` and `link()` functions on them. 
+Add `ngTableToCsv` as a dependency to your module:
+
+```js
+angular.module('your_app', ['ngTableToCsv']);
+```
+
+Add `export-csv` attribute directive on the `table` to define a new `csv` object on the scope with `generate()` and `link()` functions on them. 
+
 Use the `separator` attribute to change the default comma separator into something else (like semicolon).
+
+To create an `Export` button from an anchro tag, use the `generate()` and `link()` functions mentioned above from `ng-click` and `ng-href` attributes of an anchor tag.  
 
 See below: 
 
@@ -33,8 +47,6 @@ See below:
         <!-- table contents -->
       </table>
 ```
-
-Check out [this plunker](http://plnkr.co/Y0r33F) to see the plugin in action.
 
 #### License
 
