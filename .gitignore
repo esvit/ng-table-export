@@ -1,5 +1,18 @@
-.temp
+._*
+.~lock.*
+.buildpath
+.DS_Store
 .idea
-node_modules
-bower_components
-out
+.project
+.settings
+
+# Ignore node stuff
+node_modules/
+npm-debug.log
+libpeerconnection.log
+
+# OS-specific
+.DS_Store
+
+# Bower components
+bower
