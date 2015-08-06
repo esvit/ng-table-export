@@ -36,6 +36,7 @@
           link     : function (scope, element, attrs) {
             var data = '';
             var separator = attrs.separator ? attrs.separator : ',';
+            var ignoreSelector = attrs.exportCsvIgnore || '.ng-table-filters';
             var csv = {
               stringify : function (str) {
                 return '"' +
@@ -50,14 +51,19 @@
                   var tr = angular.element(row),
                     tds = tr.find('th'),
                     rowData = '';
-                  if (tr.hasClass('ng-table-filters')) {
+                  if (tr.is(ignoreSelector)) {
                     return;
                   }
                   if (tds.length === 0) {
                     tds = tr.find('td');
                   }
                   angular.forEach(tds, function (td, i) {
-                    rowData += csv.stringify(angular.element(td).text()) + separator;
+                    var value = '';
+                    td = angular.element(td);
+                    if (!td.is(ignoreSelector)) {
+                      value = angular.element(td).text();
+                    }
+                    rowData += csv.stringify(value) + separator;
                   });
                   rowData = rowData.slice(0, rowData.length - 1); //remove last separator
                   data += rowData + '\n';
