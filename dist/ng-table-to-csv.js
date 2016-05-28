@@ -51,7 +51,7 @@
                   var tr = angular.element(row),
                     tds = tr.find('th'),
                     rowData = '';
-                  if (tr.is(ignoreSelector)) {
+                  if (tr.hasClass(ignoreSelector)) {
                     return;
                   }
                   if (tds.length === 0) {
@@ -60,7 +60,7 @@
                   angular.forEach(tds, function (td, i) {
                     var value = '';
                     td = angular.element(td);
-                    if (!td.is(ignoreSelector)) {
+                    if (!td.hasClass(ignoreSelector)) {
                       value = angular.element(td).text();
                     }
                     rowData += csv.stringify(value) + separator;
