@@ -12,7 +12,7 @@ As opposed to [the forked library](https://github.com/esvit/ng-table-export), th
 
 ## Demo
 
-[Live Demo on Plunker](http://plnkr.co/Y0r33F)
+[Live Demo on Plunker](http://plnkr.co/VT5Eps)
 
 ## Getting Started / Usage
 
