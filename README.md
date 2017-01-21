@@ -50,6 +50,11 @@ See below:
       </table>
 ```
 
+### FAQ
+
+1. [How can multiple tables on a page be supported?](https://github.com/kollavarsham/ng-table-to-csv/issues/9)
+2. [How can specific columns on a table be ignored?](https://github.com/kollavarsham/ng-table-to-csv/issues/6)
+
 #### License
 
 MIT License - Copyright (c) 2015 The Kollavarsham Team
