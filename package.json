@@ -1,7 +1,7 @@
 {
   "name": "ng-table-to-csv",
   "description": "Export data from ngTable to CSV (Forked from ng-table-export)",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": {
     "name": "Vitalii Savchuk",
     "email": "esvit666@gmail.com"

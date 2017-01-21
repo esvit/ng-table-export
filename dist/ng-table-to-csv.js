@@ -58,12 +58,12 @@
                     tds = tr.find('td');
                   }
                   angular.forEach(tds, function (td, i) {
-                    var value = '';
+                    var value;
                     td = angular.element(td);
                     if (!td.hasClass(ignoreSelector)) {
                       value = angular.element(td).text();
+                      rowData += csv.stringify(value) + separator;
                     }
-                    rowData += csv.stringify(value) + separator;
                   });
                   rowData = rowData.slice(0, rowData.length - 1); //remove last separator
                   data += rowData + '\n';
