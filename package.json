@@ -1,18 +1,48 @@
 {
-  "name": "ng-table-export",
-  "version": "0.1.0",
-  "author": "Vitalii Savchuk <esvit666@gmail.com>",
-  "license": "BSD",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/esvit/ng-table-export.git"
+  "name": "ng-table-to-csv",
+  "description": "Export data from ngTable to CSV (Forked from ng-table-export)",
+  "version": "0.3.3",
+  "author": {
+    "name": "Vitalii Savchuk",
+    "email": "esvit666@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "The Kollavarsham Team",
+      "email": "info@kollavarsham.org"
+    }
+  ],
+  "dependencies": {},
   "devDependencies": {
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-requirejs": "~0.4.0",
-    "grunt-contrib-uglify": "~0.2.1",
-    "grunt": "~0.4.1"
+    "chai": "^3.2.0",
+    "chai-jquery": "^2.0.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "jasmine-core": "^2.4.1",
+    "jshint-stylish": "^2.0.1",
+    "karma": "^0.13.7",
+    "karma-chai": "^0.1.0",
+    "karma-chai-jquery": "^1.0.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.8",
+    "karma-jquery": "^0.1.0",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-sinon-chai": "^1.0.0",
+    "karma-spec-reporter": "^0.0.20",
+    "lolex": "^1.5.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.7",
+    "run-sequence": "^1.1.2",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
   }
 }

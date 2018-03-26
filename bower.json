@@ -1,13 +1,31 @@
 {
-  "name": "ng-table-export",
-  "version": "0.1.0",
-  "main": [
-    "ng-table-export.js"
+  "name"           : "ng-table-to-csv",
+  "description"    : "Export data from ngTable to CSV (Forked from ng-table-export)",
+  "version"        : "0.3.3",
+  "authors"        : [
+    {
+      "name" : "Vitalii Savchuk",
+      "email": "esvit666@gmail.com"
+    },
+    {
+      "name" : "The Kollavarsham Team",
+      "email": "info@kollavarsham.org",
+      "url"  : "http://kollavarsham.org/"
+    }
   ],
-  "ignore": [
-    "src"
+  "license"        : "BSD-3-Clause",
+  "main"           : ["dist/ng-table-to-csv.js"],
+  "ignore"         : [
+    "src",
+    "test",
+    "gulpfile.js",
+    "karma*.js",
+    "**/.*"
   ],
-  "dependencies": {
-    "angular": ">=1.2.0-rc.2"
+  "dependencies"   : {},
+  "devDependencies": {
+    "angular-mocks"   : ">=1.2.0",
+    "angular-scenario": ">=1.2.0",
+    "angular"         : ">=1.2.0"
   }
 }

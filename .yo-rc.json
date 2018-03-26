@@ -1,0 +1,31 @@
+{
+  "generator-angularjs-library": {
+    "props": {
+      "author": {
+        "name": "The Kollavarsham Team",
+        "email": "info@kollavarsham.org"
+      },
+      "libraryName": {
+        "original": "ng-table-to-csv",
+        "camelized": "ngTableToCsv",
+        "dasherized": "ng-table-to-csv",
+        "slugified": "ng-table-to-csv",
+        "parts": [
+          "ng",
+          "table",
+          "to",
+          "csv"
+        ]
+      },
+      "includeModuleDirectives": true,
+      "includeModuleFilters": false,
+      "includeModuleServices": false,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": false,
+      "librarySrcDirectory": "src/ng-table-to-csv",
+      "libraryUnitTestDirectory": "test/unit/ng-table-to-csv",
+      "libraryUnitE2eDirectory": "test/e2e/ng-table-to-csv"
+    }
+  }
+}
